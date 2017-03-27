@@ -39,7 +39,7 @@
 //Frameworks
 #import <CoreData/CoreData.h>
 #import "CoreData+MagicalRecord.h"
-
+#import "Reachability.h"
 
 
 //Ctrls

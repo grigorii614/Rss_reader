@@ -49,4 +49,11 @@
     });
 }
 
++ (BOOL)checkInternetConnection
+{
+    NetworkStatus netStatus = [[AppDelegate instance].internetReachability currentReachabilityStatus];
+    if(netStatus == ReachableViaWWAN || netStatus == ReachableViaWiFi) return YES;
+    else return NO;
+}
+
 @end

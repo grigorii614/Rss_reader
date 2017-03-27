@@ -32,11 +32,16 @@
 
 - (void) configureView
 {
-    [self startLoader:YES];
-    
-    [self performBlock:^{
-        [[Parser instance] parseRss:self.rss delegate:self];
-    } afterDelay:0.3];
+    if ([Manager checkInternetConnection])
+    {
+        [self startLoader:YES];
+        
+        [self performBlock:^{
+            [[Parser instance] parseRss:self.rss delegate:self];
+        } afterDelay:0.3];
+    }
+    else
+        [self parserDidFinish];
 }
 
 #pragma mark - UITableViewDeleagte

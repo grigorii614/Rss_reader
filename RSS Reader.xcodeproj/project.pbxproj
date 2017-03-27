@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6784AB051E895B1100F563E9 /* APLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6784AB021E895B1100F563E9 /* APLViewController.m */; };
+		6784AB061E895B1100F563E9 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 6784AB041E895B1100F563E9 /* Reachability.m */; };
 		67BE0F101E88422B0026F163 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 67BE0F0F1E88422B0026F163 /* main.m */; };
 		67BE0F131E88422B0026F163 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 67BE0F121E88422B0026F163 /* AppDelegate.m */; };
 		67BE0F191E88422B0026F163 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67BE0F171E88422B0026F163 /* Main.storyboard */; };
@@ -52,6 +54,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6784AB011E895B1100F563E9 /* APLViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APLViewController.h; sourceTree = "<group>"; };
+		6784AB021E895B1100F563E9 /* APLViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APLViewController.m; sourceTree = "<group>"; };
+		6784AB031E895B1100F563E9 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		6784AB041E895B1100F563E9 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		67BE0F0B1E88422B0026F163 /* RSS Reader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RSS Reader.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		67BE0F0F1E88422B0026F163 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		67BE0F111E88422B0026F163 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -152,6 +158,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6784AB001E895B1100F563E9 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				6784AB011E895B1100F563E9 /* APLViewController.h */,
+				6784AB021E895B1100F563E9 /* APLViewController.m */,
+				6784AB031E895B1100F563E9 /* Reachability.h */,
+				6784AB041E895B1100F563E9 /* Reachability.m */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
 		67BE0F021E88422B0026F163 = {
 			isa = PBXGroup;
 			children = (
@@ -250,6 +267,7 @@
 		67BE0F5B1E89020D0026F163 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6784AB001E895B1100F563E9 /* Reachability */,
 				67BE0F5C1E89021B0026F163 /* MagicalRecord */,
 			);
 			path = Frameworks;
@@ -495,6 +513,7 @@
 				67BE0FAB1E89021B0026F163 /* NSManagedObjectContext+MagicalSaves.m in Sources */,
 				67BE0FB91E8902510026F163 /* Manager.m in Sources */,
 				67BE0FA01E89021B0026F163 /* NSObject+MagicalDataImport.m in Sources */,
+				6784AB051E895B1100F563E9 /* APLViewController.m in Sources */,
 				67BE0FB01E89021B0026F163 /* MagicalRecord+Actions.m in Sources */,
 				67BE0FB61E89021B0026F163 /* MagicalRecord.m in Sources */,
 				67BE0FA11E89021B0026F163 /* NSRelationshipDescription+MagicalDataImport.m in Sources */,
@@ -507,6 +526,7 @@
 				67BE0FAC1E89021B0026F163 /* NSManagedObjectContext+MagicalThreading.m in Sources */,
 				67BE0FAD1E89021B0026F163 /* NSManagedObjectModel+MagicalRecord.m in Sources */,
 				67BE0FA71E89021B0026F163 /* NSManagedObject+MagicalRequests.m in Sources */,
+				6784AB061E895B1100F563E9 /* Reachability.m in Sources */,
 				67BE0F571E88FA0F0026F163 /* BaseCtrl.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

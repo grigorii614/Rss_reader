@@ -12,5 +12,6 @@
 
 + (void)checkRSS;
 + (void)saveDB:(void (^)(BOOL completion))completion;
++ (BOOL)checkInternetConnection;
 
 @end
