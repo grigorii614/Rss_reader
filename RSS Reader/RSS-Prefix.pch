@@ -1,0 +1,65 @@
+
+#ifdef __OBJC__
+
+
+//#undef NSLocalizedString
+//#define NSLocalizedString(key, _comment) [[Language instance] localizedString:key]
+
+
+#define CONTEXT [NSManagedObjectContext MR_defaultContext]
+//#define CONTEXT [NSManagedObjectContext MR_rootSavingContext]
+//#define CONTEXT [NSManagedObjectContext MR_context]
+//#define CREATE_ENTITY MR_createEntityInContext:ROOT_CONTEXT
+#define CREATE_ENTITY MR_createEntityInContext:CONTEXT
+//#define CREATE_ENTITY MR_createEntity
+
+#define kUserDefaults [NSUserDefaults standardUserDefaults]
+#define SETTINGS      [Settings instance]
+#define APPDELEGATE   [AppDelegate instance]
+#define SERVER        [Server instance]
+#define MANAGER       [Manager instance]
+
+#define iosVersion  [[[UIDevice currentDevice] systemVersion] floatValue]
+
+#define RANDOM_SEED() srandom(time(NULL))
+#define RANDOM_INT(__MIN__, __MAX__) ((__MIN__) + random() % ((__MAX__+1) - (__MIN__)))
+
+
+#define NULL_TO_NIL(obj) ({ __typeof__ (obj) __obj = (obj); [__obj isKindOfClass: NSNull.class] ? nil : obj; })
+#define NIL_TO_NULL(obj) ({ __typeof__ (obj) __obj = (obj); (__obj == nil) ? [NSNull null] : obj; })
+#define STRING(obj) ({ __typeof__ (obj) __obj = (obj); [NSString stringWithFormat: @"%@", (__obj) ? obj : @""]; })
+
+
+//App
+#import "AppDelegate.h"
+#import "Manager.h"
+#import "Parser.h"
+
+
+//Frameworks
+#import <CoreData/CoreData.h>
+#import "CoreData+MagicalRecord.h"
+
+
+
+//Ctrls
+#import "ListViewCtrl.h"
+#import "ListOfPostsViewCtrl.h"
+#import "DetailViewCtrl.h"
+
+
+
+//Core Data
+#import <CoreData/CoreData.h>
+#import "Rss+CoreDataClass.h"
+#import "Item+CoreDataClass.h"
+
+
+//Categories
+#import "Foundation.h"
+#import "Rss+Additions.h"
+#import "Item+Additions.h"
+
+
+#endif
+
